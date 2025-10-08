@@ -8,6 +8,7 @@ import setupUpload from './setup/upload'
 import setupStartServer from './setup/start-server'
 
 // Create express server
+// i dont know, why this is here
 const server = express()
 
 // Setup load modules
