@@ -8,6 +8,7 @@ import setupUpload from './setup/upload'
 import setupStartServer from './setup/start-server'
 
 // Create express server
+// dummy line to trigger build
 const server = express()
 
 // Setup load modules
