@@ -11,15 +11,19 @@ jobs:
     container:
       image: node:20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
       - name: Install dependencies
-      - run: npm run setup:local
+        run: npm run setup:local
 
       - name: Run setup:all
-      - run: npm run setup:all
-      
-      - name: Start project
-      - run: npm run start
+        run: npm run setup:all
 
+      - name: Start project
+        run: npm run start
