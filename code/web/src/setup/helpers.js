@@ -54,13 +54,13 @@ export function slug(text) {
     .replace(/-+$/, '')            // Trim - from end of text
 }
 
-export function getLocalIPAddress() {
-  const interfaces = require('os').networkInterfaces();
-  for (const key in interfaces) {
-    for (const alias of interfaces[key]) {
-      if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
-        return alias.address;
-      }
-    }
-  }
-} 
+// export function getLocalIPAddress() {
+//   const interfaces = require('os').networkInterfaces();
+//   for (const key in interfaces) {
+//     for (const alias of interfaces[key]) {
+//       if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
+//         return alias.address;
+//       }
+//     }
+//   }
+// } 
